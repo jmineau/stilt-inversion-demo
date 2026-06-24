@@ -1,0 +1,10 @@
+__pycache__/
+.ipynb_checkpoints/
+met/
+met_run/
+demo_run/
+demo_cli/
+
+# files the notebook writes when it runs
+demo_config.yaml
+met_crop.arl
