@@ -30,8 +30,12 @@ inverse problem's Jacobian. Staying in Python means you never leave `xarray` and
 ### Running locally instead of Colab
 
 ```bash
-pip install "fips[flux]" "arlmet[sources]"
+pip install "pystilt[visualization]==0.1.0a25" "arlmet[archives]==0.1.0b4" \
+    "fips[viz] @ git+https://github.com/jmineau/fips@051aa9600e4634bd123578d071eeade5415b9707"
 jupyter lab inverse_modeling_with_stilt.ipynb
 ```
+
+fips 0.2 is not on PyPI yet, so it installs from GitHub; once it is released
+the last requirement becomes `"fips[viz]>=0.2"`.
 
 James Mineau, Lin group, University of Utah. james.mineau@utah.edu
